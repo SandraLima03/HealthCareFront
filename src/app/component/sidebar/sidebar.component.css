@@ -1,0 +1,137 @@
+.sidebar{
+  /* position: fixed; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  width: 300px;
+  height: 100%;
+  background-color: #FFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .8);
+}
+
+.sidebar .container{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.sidebar .container .header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sidebar .container .header img {
+  width: 30%;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, .2));
+}
+
+.sidebar .container .header h1 {
+  font-size: 1.2rem;
+  color: #84A9D9;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, .2));
+}
+
+.sidebar .container .header span {
+  font-size: 1.5rem;
+  color: #113059;
+}
+
+.sidebar .container .body {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .container .body ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1.8rem;
+}
+
+.sidebar .container .body ul li > div {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .container .body ul li > div:hover .mat-icon,
+.sidebar .container .body ul li > div:hover a,
+.sidebar .container .body ul li > ul li:hover a{
+  color: #113059;
+}
+
+.sidebar .container .body ul .submenu {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .5s linear;
+}
+
+.sidebar .container .body ul li:hover .submenu{
+  max-height: 100vh;
+}
+
+.sidebar .container .body ul li .submenu li a {
+  opacity: 0;
+}
+
+.sidebar .container .body ul li:hover .submenu li a {
+  opacity: 1;
+  transition: all .5s linear;
+}
+
+.sidebar .container .body ul li .iconDrop {
+  transform: rotateX(0);
+  transition: all .5s;
+}
+
+.sidebar .container .body ul li:hover .iconDrop {
+  transform: rotateX(180deg);
+}
+
+.sidebar .container .body ul li .mat-icon{
+  width: 26px;
+  height: 26px;
+  font-size: 26px;
+  color:rgba(0, 0, 0, .5);
+  transition: all .5s ease-in-out;
+}
+
+.sidebar .container .body ul li a{
+  transition: all .5s ease-in-out;
+  text-decoration: none;
+  margin-left: .5rem;
+  color: rgba(0, 0, 0, .5);
+  font-size: 1rem;
+}
+
+.sidebar .footer button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.sidebar .footer button:hover .mat-icon{
+  animation: transition .8s infinite alternate;
+}
+
+.sidebar .footer button span{
+  margin-left: .5rem;
+}
+
+@keyframes transition {
+  from{
+    transform:translateX(0)
+  }
+  to{
+    transform:translateX(-.6rem)
+  }
+}
