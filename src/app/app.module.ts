@@ -14,6 +14,7 @@ import { CadMedicoComponent } from './screens/cad-medico/cad-medico.component';
 import { TextComponent } from './component/input/text/text.component';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { HeaderScreenComponent } from './component/header-screen/header-screen.component';
+import { CadHospitalComponent } from './screens/cad-hospital/cad-hospital.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { HeaderScreenComponent } from './component/header-screen/header-screen.c
     CadMedicoComponent,
     TextComponent,
     HeaderScreenComponent,
+    CadHospitalComponent
   ],
   imports: [
     CommonModule,
