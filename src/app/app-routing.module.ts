@@ -5,6 +5,7 @@ import { CadMedicoComponent } from './screens/cad-medico/cad-medico.component';
 import {HomeComponent} from './screens/home/home.component'
 import { CadHospitalComponent } from './screens/cad-hospital/cad-hospital.component';
 import { CadEspecialidadeComponent } from './screens/cad-especialidade/cad-especialidade.component';
+import { AgendamentoConsultaComponent } from './screens/agendamento-consulta/agendamento-consulta.component';
 
 const routes: Routes = [
   {path: 'cadastro-beneficiario', component:CadBeneficiarioComponent},
@@ -13,6 +14,8 @@ const routes: Routes = [
   {path: 'cadastro-hospital', component:CadHospitalComponent},
   {path: '', component:HomeComponent},
   {path: 'cadastro-especialidade', component:CadEspecialidadeComponent},
+  {path: '', component:HomeComponent},
+  {path: 'agendamento-consulta', component:AgendamentoConsultaComponent},
   {path: '', component:HomeComponent}
 ];
 

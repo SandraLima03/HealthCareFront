@@ -17,6 +17,7 @@ import { HeaderScreenComponent } from './component/header-screen/header-screen.c
 import { ReactiveFormsModule } from '@angular/forms';
 import { CadHospitalComponent } from './screens/cad-hospital/cad-hospital.component';
 import { CadEspecialidadeComponent } from './screens/cad-especialidade/cad-especialidade.component';
+import { AgendamentoConsultaComponent } from './screens/agendamento-consulta/agendamento-consulta.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CadEspecialidadeComponent } from './screens/cad-especialidade/cad-espec
     TextComponent,
     HeaderScreenComponent,
     CadHospitalComponent,
-    CadEspecialidadeComponent
+    CadEspecialidadeComponent,
+    AgendamentoConsultaComponent
   ],
   imports: [
     CommonModule,
