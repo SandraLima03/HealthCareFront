@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 1rem;
   width: 300px;
   height: 100%;
   background-color: #FFFF;
@@ -13,7 +13,7 @@
 .sidebar .container{
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 1rem;
 }
 
 .sidebar .container .header {
@@ -25,21 +25,11 @@
   gap: 1rem;
 }
 
-.sidebar .container .header img {
-  width: 30%;
+.sidebar .container .header svg {
+  width: 60%;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, .2));
 }
 
-.sidebar .container .header h1 {
-  font-size: 1.2rem;
-  color: #84A9D9;
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, .2));
-}
-
-.sidebar .container .header span {
-  font-size: 1.5rem;
-  color: #113059;
-}
 
 .sidebar .container .body {
   display: flex;
@@ -50,7 +40,7 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  gap: 1rem;
+  gap: 1.3rem;
 }
 
 .sidebar .container .body ul li > div {
@@ -63,6 +53,11 @@
 .sidebar .container .body ul li > ul li:hover a{
   color: #113059;
 }
+
+.sidebar .container .body ul li > div .actived {
+  color: #113059;
+}
+
 
 .sidebar .container .body ul .submenu {
   padding-left: 2rem;
@@ -103,6 +98,14 @@
 }
 
 .sidebar .container .body ul li a{
+  transition: all .5s ease-in-out;
+  text-decoration: none;
+  margin-left: .5rem;
+  color: rgba(0, 0, 0, .5);
+  font-size: 1rem;
+}
+
+.sidebar .container .body ul li {
   transition: all .5s ease-in-out;
   text-decoration: none;
   margin-left: .5rem;

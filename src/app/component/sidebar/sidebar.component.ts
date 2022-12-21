@@ -8,4 +8,7 @@ import { sidebarLinks, SidebarLink} from 'src/utils/sidebar-links';
 })
 export class SidebarComponent {
   links: SidebarLink[] = sidebarLinks
+
+  @Input('currentRouter') currentRouter : string | undefined = '';
+  @Input('isPainel') IsPainel: string | undefined = 'false';
 }

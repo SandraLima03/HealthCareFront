@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./cad-medico.component.css']
 })
 export class CadMedicoComponent {
-
+  onSubmit($event: any): void {
+    $event.preventDefault()
+    console.log(
+      [
+        $event.target.inputName.value,
+        $event.target.inputCPF.value,
+        $event.target.inputTel.value,
+        $event.target.inputEndereco.value,
+        $event.target.inputCarteira.value
+      ]
+    );
+  }
 }

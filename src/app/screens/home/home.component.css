@@ -6,7 +6,7 @@
 }
 
 
-.home .med-vetor{
+.home .med-svg{
   width: 100%;
   height: 100%;
   display: flex;
@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.home .med-vetor img {
-  width: 70%;
-  height: 90%;
+.home .med-svg svg{
+  width: 60%;
+  height: 70%;
 }

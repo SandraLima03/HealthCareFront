@@ -1,1 +1,31 @@
-<p>cad-medico works!</p>
+<div class="cadMedico">
+  <app-sidebar isPainel="true" ></app-sidebar>
+
+  <div class="forms">
+    <app-header-screen title="Cadastro Médico"></app-header-screen>
+    <form  role="form" novalidate (submit)="onSubmit($event)">
+      <div class="formBody">
+        <div class="lineOne">
+          <app-text inputId="inputName" typeInput="text" nameInput="Nome" placeholder="Digite o nome "></app-text>
+        </div>
+        <div class="lineTwo">
+          <app-text inputId="inputCPF" typeInput="number" nameInput="CPF" placeholder="Digite o CPF " ></app-text>
+          <app-text inputId="inputTel" typeInput="tel" nameInput="Telefone" placeholder="Digite o telefone " ></app-text>
+        </div>
+        <div class="lineOne">
+          <app-text inputId="inputEndereco" typeInput="text" nameInput="Endereço" placeholder="Digite o endereço "></app-text>
+        </div>
+        <div class="slide">
+          <span>Ativo</span>
+          <mat-slide-toggle color="primary"></mat-slide-toggle>
+        </div>
+
+      </div>
+      <div class="buttons">
+        <button type="submit">cadastrar</button>
+
+      </div>
+    </form>
+
+  </div>
+</div>

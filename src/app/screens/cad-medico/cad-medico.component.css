@@ -1,0 +1,99 @@
+.cadMedico{
+  width: 100vw;
+  height: 100vh;
+  background-color: #F0F0F2;
+  display: flex;
+}
+
+
+.cadMedico .forms{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cadMedico .forms app-header-screen{
+  width: 100%;
+}
+
+.cadMedico .forms form{
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.cadMedico .forms form .formBody{
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cadMedico .forms form .formBody .lineOne{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.cadMedico .forms form .formBody .lineTwo{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  gap: .6rem;
+}
+
+.cadMedico .forms form .formBody .slide{
+  width: 60%;
+  display: flex;
+  justify-content: start
+}
+
+.cadMedico .forms form .formBody .slide span{
+  margin-right: .5rem;
+  color: rgba(0, 0, 0, .5);
+}
+
+.cadMedico .forms form .formBody .lineOne app-text{
+  width: 100%;
+}
+
+.cadMedico .forms form .formBody .lineTwo app-text{
+  width: 100%;
+}
+
+.cadMedico .forms form .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadMedico .forms form button {
+  padding: .8rem 1.2rem;
+  background-color: transparent;
+  border: 2px solid #113059;
+  color: #113059;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+  transition: all .4s ease-in-out;
+}
+
+.cadMedico .forms form button:hover{
+  color: white;
+  background-color: #113059;
+}
