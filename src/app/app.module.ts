@@ -14,7 +14,12 @@ import { CadMedicoComponent } from './screens/cad-medico/cad-medico.component';
 import { TextComponent } from './component/input/text/text.component';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { HeaderScreenComponent } from './component/header-screen/header-screen.component';
+<<<<<<< HEAD
 import { ReactiveFormsModule } from '@angular/forms';
+=======
+import { CadHospitalComponent } from './screens/cad-hospital/cad-hospital.component';
+import { CadEspecialidadeComponent } from './screens/cad-especialidade/cad-especialidade.component';
+>>>>>>> 9948dd0f171f2cf596ae8719ebd4dac277cebaa5
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +30,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CadMedicoComponent,
     TextComponent,
     HeaderScreenComponent,
+    CadHospitalComponent,
+    CadEspecialidadeComponent
   ],
   imports: [
     CommonModule,

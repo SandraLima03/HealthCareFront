@@ -1,0 +1,94 @@
+.cadEspecialidade {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  background: #F0F0F2;
+  display: flex;
+}
+
+.cadEspecialidade .forms-especialidade {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.cadEspecialidade .forms-especialidade app-header-screen {
+ width: 100%;
+}
+
+.cadEspecialidade .forms-especialidade .form-content {
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.cadEspecialidade .forms-especialidade .form-content .content-all {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cadEspecialidade .forms-especialidade .form-content .content-all .content {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.cadEspecialidade .forms-especialidade .form-content .content-all .contentTwo {
+  width: 60%;
+  display: flex;
+  align-items: flex-start;
+  gap: .6rem;
+}
+
+.cadEspecialidade .forms-especialidade .form-content .content-all .slide {
+  width: 60%;
+  display: flex;
+  justify-content: start;
+}
+
+.cadEspecialidade .forms-especialidade .form-content .contentTwo span {
+  margin-right: .5rem;
+  color: rgba(0, 0, 0, .5);
+}
+
+.cadEspecialidade .forms-especialidade .form-content .content-all .content app-text {
+  width: 100%;
+}
+
+.cadEspecialidade .forms-especialidade .form-content .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadEspecialidade .forms-especialidade .form-content button {
+  padding: .8rem 1.2rem;
+  background: transparent;
+  border: 2px solid #113059;
+  color: #113059;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+  transition: all .4s ease-in-out;
+}
+
+.cadEspecialidade .forms-especialidade .form-content button:hover {
+  color: #FFF;
+  background: #113059;
+}
