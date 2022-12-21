@@ -9,13 +9,10 @@ import { CadEspecialidadeComponent } from './screens/cad-especialidade/cad-espec
 const routes: Routes = [
   {path: 'cadastro-beneficiario', component:CadBeneficiarioComponent},
   {path: '', component:HomeComponent},
-<<<<<<< HEAD
   {path: 'painel/cadastro-medico', component:CadMedicoComponent},
-=======
   {path: 'cadastro-hospital', component:CadHospitalComponent},
   {path: '', component:HomeComponent},
   {path: 'cadastro-especialidade', component:CadEspecialidadeComponent},
->>>>>>> 9948dd0f171f2cf596ae8719ebd4dac277cebaa5
   {path: '', component:HomeComponent}
 ];
 
