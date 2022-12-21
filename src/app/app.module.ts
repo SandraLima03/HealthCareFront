@@ -11,7 +11,9 @@ import { HomeComponent } from './screens/home/home.component';
 import { CadBeneficiarioComponent } from './screens/cad-beneficiario/cad-beneficiario.component'
 import { CommonModule } from '@angular/common';
 import { CadMedicoComponent } from './screens/cad-medico/cad-medico.component';
-
+import { TextComponent } from './component/input/text/text.component';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { HeaderScreenComponent } from './component/header-screen/header-screen.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,14 +21,17 @@ import { CadMedicoComponent } from './screens/cad-medico/cad-medico.component';
     SidebarComponent,
     HomeComponent,
     CadBeneficiarioComponent,
-    CadMedicoComponent
+    CadMedicoComponent,
+    TextComponent,
+    HeaderScreenComponent,
   ],
   imports: [
     CommonModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
