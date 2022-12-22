@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CadHospitalComponent } from './screens/cad-hospital/cad-hospital.component';
 import { CadEspecialidadeComponent } from './screens/cad-especialidade/cad-especialidade.component';
 import { AgendamentoConsultaComponent } from './screens/agendamento-consulta/agendamento-consulta.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CadBeneficiarioService } from './service/cad-beneficiario.service';
+
 
 @NgModule({
   declarations: [
@@ -40,9 +44,11 @@ import { AgendamentoConsultaComponent } from './screens/agendamento-consulta/age
     BrowserAnimationsModule,
     MatIconModule,
     MatSlideToggleModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClientModule, CadBeneficiarioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

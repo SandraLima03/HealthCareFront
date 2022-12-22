@@ -1,35 +1,46 @@
-<div class="cadBeneficiario">
-  <app-sidebar currentRouter="/cadastro-beneficiario"></app-sidebar>
+<h2>Cadastrar beneficiario: </h2>
+<hr>
+<form>
+  <p>idBeneficiario: <input type="text" name="nome" [(ngModel)]="beneficaioInput.idBeneficiario"></p>
+  <p>Nome: <input type="text" name="Nome" [(ngModel)]="beneficaioInput.nome"></p>
+  <p>cpf: <input type="text" name="cpf" [(ngModel)]="beneficaioInput.cpf"></p>
+  <p>telefone: <input type="text" name="telefone" [(ngModel)]="beneficaioInput.cpf"></p>
+  <p>endereco: <input type="text" name="endereco" [(ngModel)]="beneficaioInput.telefone"></p>
+  <p>numeroCarteirinha: <input type="text" name="numeroCarteirinha" [(ngModel)]="beneficaioInput.numeroCarteirinha"></p>
+  <p>ativo: <input type="text" name="ativo" *ngIf="beneficaioInput.ativo" [(ngModel)]="beneficaioInput.ativo"></p>
+  <p>email: <input type="text" name="email" [(ngModel)]="beneficaioInput.email"></p>
+  <p>senha: <input type="text" name="senha" [(ngModel)]="beneficaioInput.senha"></p>
+  <button type="button" (click)="cadastrar()">Cadastrar</button>
 
-  <div class="forms">
-    <app-header-screen title="Cadastro Beneficiário"></app-header-screen>
-    <form role="form" novalidate (submit)="onSubmit($event)">
-      <div class="formBody">
-        <div class="lineOne">
-          <app-text inputId="inputName" typeInput="text" nameInput="Nome" placeholder="Digite o nome "></app-text>
-        </div>
-        <div class="lineTwo">
-          <app-text inputId="inputCPF" typeInput="number" nameInput="CPF" placeholder="Digite o CPF "></app-text>
-          <app-text inputId="inputTel" typeInput="tel" nameInput="Telefone" placeholder="Digite o telefone "></app-text>
-        </div>
-        <div class="lineOne">
-          <app-text inputId="inputEndereco" typeInput="text" nameInput="Endereço" placeholder="Digite o endereço "></app-text>
-        </div>
-        <div class="lineOne">
-          <app-text inputId="inputCarteira" typeInput="number" nameInput="Número da Carteira" placeholder="Digite o número da carteira "></app-text>
-        </div>
-        <div class="slide">
-          <span>Ativo</span>
-          <mat-slide-toggle color="primary"></mat-slide-toggle>
-        </div>
+</form>
 
-      </div>
-      <div class="buttons">
-        <button type="submit">cadastrar</button>
 
-      </div>
-    </form>
+<h2>Beneficiarios Cadastrados: </h2>
 
-  </div>
-</div>
+<table>
+  <tr>
+    <th>#id</th>
+    <th>nome</th>
+    <th>cpf</th>
+    <th>telefone</th>
+    <th>endereco</th>
+    <th>numeroCarteirinha</th>
+    <th>ativo</th>
+    <th>email</th>
+    <th>senha</th>
+  </tr>
 
+  <tr>
+    <th>{{beneficaioInput.idBeneficiario}}</th>
+    <th>{{beneficaioInput.nome}}</th>
+    <th>{{beneficaioInput.cpf}}</th>
+    <th>{{beneficaioInput.telefone}}</th>
+    <th>{{beneficaioInput.endereco}}</th>
+    <th>{{beneficaioInput.numeroCarteirinha}}</th>
+    <th>{{beneficaioInput.ativo}}</th>
+    <th>{{beneficaioInput.email}}</th>
+    <th>{{beneficaioInput.senha}}</th>
+  </tr>
+
+
+</table>
